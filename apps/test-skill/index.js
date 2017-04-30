@@ -56,10 +56,12 @@ function(request,response) {
 		resolve();
 	}).then(function(d){
 		wait(11000);
-		return response.say('piep');
+		d.say('piep');
+
+		return d.send()
 	});
 
-	return response.send('ok digga');
+	return response.say('ok digga').send();
 });
 
 function wait(ms){
