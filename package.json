@@ -1,0 +1,14 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "A sample Alexa app",
+  "main": "index.js",
+  "author": "Matt Kruse <github@mattkruse.com> (http://mattkruse.com/)",
+  "license": "ISC",
+  "alexa": {
+    "applicationId": "amzn1.ask.skill.feadf839-fc6c-4a41-9d8a-115dbfbcfd90"
+  },
+  "dependencies": {
+    "alexa-app": "^2.1.0"
+  }
+}
