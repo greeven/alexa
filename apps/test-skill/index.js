@@ -6,7 +6,7 @@ var app = new alexa.app( 'test-skill' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Welcome to your test skill' ).reprompt( 'Way to go. You got it to run. Bad ass.' ).shouldEndSession( false );
+	response.say( 'Willkommen zu deinem ersten eigenen Skill.' ).reprompt( 'Way to go. You got it to run. Bad ass.' ).shouldEndSession( false );
 } );
 
 
@@ -22,13 +22,14 @@ app.intent('sayNumber',
     "slots":{"number":"NUMBER"}
 	,"utterances":[ 
 		"say the number {1-100|number}",
+		"sag die Nummer {1-100|number}",
 		"give me the number {1-100|number}",
 		"tell me the number {1-100|number}",
 		"I want to hear you say the number {1-100|number}"]
   },
   function(request,response) {
     var number = request.slot('number');
-    response.say("You asked for the number "+number);
+    response.say("Der Meister fragte nach der Nummer " + number);
   }
 );
 
