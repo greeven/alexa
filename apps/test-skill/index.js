@@ -51,8 +51,10 @@ app.intent("piep",
 	"utterances":["piep ein mal"]
 },
 function(request,response) {
+
+	return response.send();
+
 	return new Promise(function(resolve,reject) {
-		response.say('ok bis gleich');
 		resolve();
 	}).then(function(d){
 		wait(20000);
