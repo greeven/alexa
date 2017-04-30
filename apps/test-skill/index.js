@@ -52,14 +52,14 @@ app.intent("piep",
 },
 function(request,response) {
 
-	response.send();
-
-	return new Promise(function(resolve,reject) {
+	new Promise(function(resolve,reject) {
 		resolve();
 	}).then(function(d){
-		wait(20000);
-		response.say('piep');
+		wait(11000);
+		return response.say('piep');
 	});
+
+	return response.send('ok digga');
 });
 
 function wait(ms){
