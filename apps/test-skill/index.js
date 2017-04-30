@@ -53,7 +53,7 @@ app.intent("piep",
 function(request,response) {
 	return new Promise(function(resolve,reject) {
 
-		wait(5000);
+		wait(20000);
 
 		if (true) {
 			resolve();
