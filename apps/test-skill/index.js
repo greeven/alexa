@@ -52,6 +52,7 @@ app.intent("piep",
 },
 function(request,response) {
 	return new Promise(function(resolve,reject) {
+		response.say('ok bis gleich');
 		resolve();
 	}).then(function(d){
 		wait(20000);
