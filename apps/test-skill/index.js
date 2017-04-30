@@ -21,15 +21,25 @@ app.intent('sayNumber',
   {
     "slots":{"number":"NUMBER"}
 	,"utterances":[ 
-		"say the number {1-100|number}",
-		"sag die Nummer {1-100|number}",
-		"give me the number {1-100|number}",
-		"tell me the number {1-100|number}",
-		"I want to hear you say the number {1-100|number}"]
+		"sag die Nummer {1-100|number}"]
   },
   function(request,response) {
     var number = request.slot('number');
-    response.say("Der Meister fragte nach der Nummer " + number);
+    response.say("Der große Meister fragte nach der Nummer " + number);
+  }
+);
+
+app.intent('anotherNumber',
+  {
+    "slots":{"numberA":"NUMBER", "numberB":"NUMBER"}
+	,"utterances":[ 
+		"nummer aus {1-100|numberA} und {1-100|numberB}"]
+  },
+  function(request,response) {
+  	console.log('hey yo')
+    var numberA = request.slot('numberA');
+    var numberB = request.slot('numberB');
+    response.say("Die glorreiche Nummer ist " + numberA + "" + numberB + ". Cool, ne?");
   }
 );
 
