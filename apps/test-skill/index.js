@@ -52,16 +52,9 @@ app.intent("piep",
 },
 function(request,response) {
 	return new Promise(function(resolve,reject) {
-
-		wait(20000);
-
-		if (true) {
-			resolve();
-		}
-		else {
-			reject(Error("It broke"));
-		}
+		resolve();
 	}).then(function(d){
+		wait(20000);
 		response.say('piep');
 	});
 });
