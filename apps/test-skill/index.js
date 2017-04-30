@@ -52,7 +52,7 @@ app.intent("piep",
 },
 function(request,response) {
 
-	return response.send();
+	response.send();
 
 	return new Promise(function(resolve,reject) {
 		resolve();
