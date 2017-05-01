@@ -1,8 +1,10 @@
 # Alexa Skills with Node.js on Heroku
 
-After getting a [Amazon Echo](https://www.amazon.de/gp/product/B01GAGVCUY/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B01GAGVCUY&linkCode=as2&tag=koonys-21)![](http://ir-de.amazon-adsystem.com/e/ir?t=koonys-21&l=as2&o=3&a=B01GAGVCUY) I wanted to know how one can make skills on its own.
+After getting [Amazon Echo](https://www.amazon.de/gp/product/B01GAGVCUY/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B01GAGVCUY&linkCode=as2&tag=koonys-21)![](http://ir-de.amazon-adsystem.com/e/ir?t=koonys-21&l=as2&o=3&a=B01GAGVCUY) I wanted to know how one can make skills on its own.
 
-Using [this post](https://iwritecrappycode.wordpress.com/2016/04/01/create-an-alexa-skill-in-node-js-and-hosting-it-on-heroku/) as a starting point I ended up with the code you can see in this repository as an absolute minimum for developing a skill.
+Using [this post](https://iwritecrappycode.wordpress.com/2016/04/01/create-an-alexa-skill-in-node-js-and-hosting-it-on-heroku/) as a starting point I ended up with this repository which can be pushed to heroku and used to get skills for alexa up and running.
+
+Following you will read about how to get going.
 
 
 ## Before You Start
