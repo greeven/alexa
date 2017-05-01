@@ -9,6 +9,7 @@ Following you will read about how to get going.
 
 ## Before You Start
 1. Get Echo or an Dot and set it up on their web app under http://alexa.amazon.com
+   
    *(I found myself googling "alexa web app" for that. The actual android app from the store seems to be just a webview app version of that url.)*
 2. Get an developer account on amazon under https://developer.amazon.com
 3. Get an heroku account under https://www.heroku.com
