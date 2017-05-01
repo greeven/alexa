@@ -6,7 +6,10 @@ var app = new alexa.app( 'test-skill' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Willkommen zu deinem ersten eigenen Skill.' ).reprompt( 'Way to go. You got it to run. Bad ass.' ).shouldEndSession( false );
+	response
+	.say( 'Willkommen zu deinem ersten eigenen Skill.' )
+	.reprompt( 'Welche Nummer darf ich für dich sagen?' )
+	.shouldEndSession( false );
 } );
 
 
@@ -28,7 +31,7 @@ function(request,response) {
 	console.log('Response: ', response)
 
 	var number = request.slot('number');
-	response.say("Der große Meister fragte nach der Nummer " + number);
+	response.say("Du hast nach der Nummer " + number + " gefragt.");
 }
 );
 
@@ -42,37 +45,8 @@ function(request,response) {
 	console.log('hey yo')
 	var numberA = request.slot('numberA');
 	var numberB = request.slot('numberB');
-	response.say("Die glorreiche Nummer ist " + numberA + "" + numberB + ". Cool, ne?");
+	response.say("Die glorreiche Nummer ist " + numberA + "" + numberB + " heute.");
 }
 );
-
-app.intent("piep",
-{ 
-	"utterances":["piep ein mal"]
-},
-function(request,response) {
-
-	new Promise(function(resolve,reject) {
-		resolve();
-	}).then(function(d){
-		wait(11000);
-		d.say('piep');
-
-		return d.send()
-	});
-
-	return response.say('ok digga').send();
-});
-
-function wait(ms){
-
-	var start = new Date().getTime();
-
-	var end = start;
-
-	while(end < start + ms) {
-		end = new Date().getTime();
-	}
-}
 
 module.exports = app;
