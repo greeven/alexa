@@ -39,17 +39,6 @@ alexa-app@^3.2.0:
     lodash.defaults "^4.2.0"
     numbered "^1.0.0"
 
-alexa-app@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/alexa-app/-/alexa-app-4.0.0.tgz#9b74cc6e86dd6728ca6f1fa4b25a1bb397896283"
-  dependencies:
-    alexa-utterances "^0.2.0"
-    alexa-verifier-middleware "^0.2.1"
-    bluebird "^2.10.2"
-    body-parser "^1.15.2"
-    lodash.defaults "^4.2.0"
-    numbered "^1.0.0"
-
 alexa-utterances@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/alexa-utterances/-/alexa-utterances-0.2.1.tgz#f2b70b6afd3ad886711da8f994e7e49549e60bf1"
@@ -423,8 +412,8 @@ lodash.defaults@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
 
 lodash@^4.14.0:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
 
 media-typer@0.3.0:
   version "0.3.0"
